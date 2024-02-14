@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtering Amiibos</title>
+    <script src="js/select.js" type="module"></script>
+    <style>
+        select {
+            width: 200px;
+            margin-bottom: 12px; ; 
+        }
+    </style>
+</head>
+<body>
+    <p><a href="index.html">Back to index</a></p>
+    <h1>All amiibos</h1>
+    <!--Select-->
+    <label for="amiiboSeries">Choose by AmiiboSeries: </label>
+    <select id="amiiboSeries" disabled="disabled">
+        <option value="none" selected>Please select</opt>
+    </select>
+
+    <ul id="amiiboList"><li>Loading...</li></ul>
+</body>
+</html>

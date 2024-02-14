@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtering Amiibos</title>
+    <script src="js/check.js" type="module"></script>
+    <style>
+        input[type="checkbox"] { 
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="index.html">Back to index</a></p>
+
+    <h1>All amiibos</h1>
+
+    <!--Check-boxes-->
+    <fieldset id="types">
+        <legend>Type:</legend>
+        <div id="check-boxes">
+            <label for="mario">Mario</label>
+            <input type="checkbox" id="mario" name="checkbox-type">
+            <label for="zelda">Zelda</label>
+            <input type="checkbox" id="zelda" name="checkbox-type">
+            <label for="link">Link</label>
+            <input type="checkbox" id="link" name="checkbox-type">
+            <label for="octoling">Octoling</label>
+            <input type="checkbox" id="octoling" name="checkbox-type">
+            <label for="mallary">Mallary</label>
+            <input type="checkbox" id="mallary" name="checkbox-type">
+            <label for="rory">Rory</label>
+            <input type="checkbox" id="rory" name="checkbox-type">
+            <button id="selectAll">Select all</button>
+            <button id="clearAll">Clear all</button>
+        </div>
+    </fieldset>
+
+    <ul id="amiiboList"><li>Loading...</li></ul>
+</body>
+</html>
