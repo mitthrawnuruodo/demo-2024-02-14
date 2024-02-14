@@ -60,6 +60,16 @@ const makeRadioButtons = async () => {
         radioBtnsContainer.appendChild(label);
         radioBtnsContainer.appendChild(radioBtn);
     }
+    const clearSelection = document.createElement("button");
+    clearSelection.innerHTML = "Clear Selection";
+    clearSelection.addEventListener("click", ()=>{
+        for (let rb of radioButtons) {
+            console.log(rb.checked);
+            rb.checked = false;
+        }
+        listData(collection); // List all
+    });
+    radioBtnsContainer.appendChild( clearSelection ); 
 }
 
 window.addEventListener("load", () => {
