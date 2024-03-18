@@ -50,7 +50,7 @@ export const getAllAmiibos = async () => {
 
 export const getAll = async (type) => {
     const api = `https://www.amiiboapi.com/api/${type}`;
-    //console.log(api);
+    console.log(api);
     try {
         const response = await fetch(api); 
         if (!response.ok) throw response.statusText;
