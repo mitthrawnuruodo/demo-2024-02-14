@@ -66,6 +66,6 @@ export const getAll = async (type) => {
         unique.sort();
         return unique;
     } catch (error) {
-        console.error("Error message: "+errors);
+        console.error("Error message: "+error);
     }
 };
